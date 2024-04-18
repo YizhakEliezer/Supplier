@@ -11,7 +11,7 @@ function MainComponent() {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch('https://yizhakeliezer.github.io/Supplier/refael.json');
+                const response = await fetch('refael.json');
                 const data = await response.json();
                 setOrganizations(data);
             } catch (error) {
