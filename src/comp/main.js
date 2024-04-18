@@ -12,8 +12,9 @@ function MainComponent() {
         async function fetchData() {
             try {
                 const response = await fetch('refael.json');
-                const data = await response.json();
-                setOrganizations(data);
+                const data = await response.text();
+                 console.log(data);
+                // setOrganizations(data);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
